@@ -97,8 +97,8 @@ class Bot:
     def __init__(self):
         #Connect to IBKR on init
         self.ib = IBApi()
-        # 4001 = Gateway port  -- 7496 = TWS port
-        self.ib.connect("127.0.0.1", 7496, 1)
+        # 4001 = Gateway port  -- 7497 = TWS port
+        self.ib.connect("127.0.0.1", 7497, 1)
     
         #threading
         ib_thread = threading.Thread(target=self.run_loop, daemon=True)
